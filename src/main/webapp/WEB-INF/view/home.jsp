@@ -5,7 +5,7 @@
 <html>
 
 <head>
-	<title>	KAYHAN ACADEMY  Home Page</title>
+	<title>	KAYHAN ACADEMY</title>
 	
 	<!-- Reference Bootstrap files -->
 <link rel="stylesheet"
@@ -21,14 +21,27 @@
 	#text{
 	color: white;
 	}
+	
+	.right{
+	float: right;
+	}
 	</style>
 </head>
 
 <body background="<c:url value='/images/home.jpg'/>">
-	
+
+
+   
+	      <a style="padding: 10px"  class="right" href=" ${pageContext.request.contextPath}/showLoginPage"">  
+	      <button  type="button" class="btn btn-danger">LogOut</button>
+	      </a>
+     
+    
+    
 	<div class="container">
 	
-	<h2 id="text">Welcome to 	KAYHAN ACADEMY...</h2>
+
+	<h1 id="text">WELCOME TO KAYHAN ACADEMY HOME PAGE..</h1>
 	<hr>
 	
 	<p id="text">
@@ -48,7 +61,7 @@
 	<security:authorize access="hasRole('MANAGER')" >
 	<p>
 	<a href="${pageContext.request.contextPath}/leaders" >
-	<button class="btn btn-success" >Leaders</button>
+	<button class="btn btn-success" >Managers</button>
   
 	
 	</a>
@@ -81,12 +94,12 @@
 	
 	
 	
-	<form:form action="${pageContext.request.contextPath}/logout">
+	<%-- <form:form action="${pageContext.request.contextPath}/logout">
 	
 	<input  type="submit" class="btn btn-danger" value="logout"/>
 	
 	
 	
-	</form:form>
+	</form:form> --%>
 	
 	

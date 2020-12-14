@@ -4,6 +4,7 @@ com\employee\dao\Employee_Roles.class
 com\employee\model\Admin_Registeration_Model.class
 com\employee\controller\LoginController.class
 com\employee\config\Dispatcher_Servlet.class
+com\employee\controller\Employees_Roles_Controller.class
 com\employee\config\Dispatcher_Initializer.class
 com\employee\config\SecurityWebApplicationInitializer.class
 com\employee\dao\Admin_Registeration_Dao.class

@@ -95,7 +95,7 @@ color: white;
 
 
 						     <button type="submit" class="btn btn-info" >Sign Up</button>
-						        <a herf="${pageContext.request.contextPath}showLoginPage">
+						        <a herf="${pageContext.request.contextPath}/showLoginPage">
 						            
 								      <button type="button" class="btn btn-primary">Long In</button>
 								</a>

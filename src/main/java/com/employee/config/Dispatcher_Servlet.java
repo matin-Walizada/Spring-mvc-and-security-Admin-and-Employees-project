@@ -38,7 +38,7 @@ public class Dispatcher_Servlet implements  WebMvcConfigurer {
 	   public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
 	      // Register resource handler for CSS and JS
-	      registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/statics/", "D:/statics/")
+	      registry.addResourceHandler("/resources/**").addResourceLocations("/assets/")
 	            .setCacheControl(CacheControl.maxAge(2, TimeUnit.HOURS).cachePublic());
 
 	      // Register resource handler for images
